@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7288454333877005835}
   - component: {fileID: 4524483975302133295}
   - component: {fileID: 6984732065327394734}
+  - component: {fileID: 664389336057247986}
   m_Layer: 0
   m_Name: Iron_Rod
   m_TagString: Untagged
@@ -79,6 +80,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &664389336057247986
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494974210331756762}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0850985, y: 0.06284947, z: 0.07951708}
+  m_Center: {x: -0.00048303616, y: 0.0000009536743, z: 0.040839553}
 --- !u!1 &1430540971449175202
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +104,7 @@ GameObject:
   - component: {fileID: 6205651699816128696}
   - component: {fileID: 5667345858846002082}
   - component: {fileID: 4524274101101135634}
+  - component: {fileID: 857871738039767802}
   m_Layer: 0
   m_Name: Iron_Rod (1)
   m_TagString: Untagged
@@ -158,6 +173,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &857871738039767802
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430540971449175202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0850985, y: 0.06284947, z: 0.07951708}
+  m_Center: {x: -0.00048303616, y: 0.0000009536743, z: 0.040839553}
 --- !u!1 &1543555309315108572
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +197,7 @@ GameObject:
   - component: {fileID: 7259956706931965243}
   - component: {fileID: 3656709283823445757}
   - component: {fileID: 6154746942048550671}
+  - component: {fileID: 9141659964159247597}
   m_Layer: 0
   m_Name: Iron_Rod (4)
   m_TagString: Untagged
@@ -237,6 +266,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &9141659964159247597
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543555309315108572}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0850978, y: 0.062849455, z: 0.07951708}
+  m_Center: {x: -0.000483036, y: 0, z: 0.040839553}
 --- !u!1 &3845728230703603399
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,6 +290,7 @@ GameObject:
   - component: {fileID: 7861648621666316958}
   - component: {fileID: 65868286212085159}
   - component: {fileID: 5006579299920176043}
+  - component: {fileID: 1661719183366174709}
   m_Layer: 0
   m_Name: Iron_Rod (3)
   m_TagString: Untagged
@@ -316,6 +359,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1661719183366174709
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3845728230703603399}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0850985, y: 0.06284947, z: 0.07951708}
+  m_Center: {x: -0.00048303616, y: -0.0000009536743, z: 0.040839553}
 --- !u!1 &3980295146332646837
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +383,7 @@ GameObject:
   - component: {fileID: 5241265928344279184}
   - component: {fileID: 8788320419102624661}
   - component: {fileID: 9061697720450812960}
+  - component: {fileID: 161728518527469592}
   m_Layer: 0
   m_Name: Iron_Rod (2)
   m_TagString: Untagged
@@ -395,6 +452,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &161728518527469592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3980295146332646837}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0850985, y: 0.06284947, z: 0.07951708}
+  m_Center: {x: -0.00048303616, y: 0, z: 0.040839553}
 --- !u!1 &4656740902605331274
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +476,7 @@ GameObject:
   - component: {fileID: 3121105325841147747}
   - component: {fileID: 3296118831475125419}
   - component: {fileID: 4562978718089801729}
+  - component: {fileID: 4505427813200226462}
   m_Layer: 0
   m_Name: Iron_Rod (5)
   m_TagString: Untagged
@@ -474,6 +545,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4505427813200226462
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4656740902605331274}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0850983, y: 0.062849455, z: 0.07951708}
+  m_Center: {x: -0.0004830361, y: 0, z: 0.040839553}
 --- !u!1 &7371434398552954115
 GameObject:
   m_ObjectHideFlags: 0
