@@ -20,5 +20,6 @@ public class bot : MonoBehaviour
         {
             agent.SetDestination(target.position);
         }
+        
     }
 }
