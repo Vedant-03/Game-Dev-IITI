@@ -29,6 +29,7 @@ namespace StarterAssets
 		[Tooltip("The height the player can jump")]
 		public float JumpHeight = 1.2f;
 		[Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
+
 		public float Gravity = -15.0f;
 
 		[Space(10)]

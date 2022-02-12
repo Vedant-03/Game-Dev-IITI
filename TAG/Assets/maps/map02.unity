@@ -1287,7 +1287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221d4ca2577c38e45a9f87d436a056c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1786050638}
+  target: {fileID: 0}
   agent: {fileID: 304754161}
 --- !u!195 &304754161
 NavMeshAgent:
@@ -3651,6 +3651,11 @@ PrefabInstance:
         type: 3}
       propertyPath: SprintSpeed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544,
+        type: 3}
+      propertyPath: CrouchHeight
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4523139366846529165, guid: 64dce48905ffd9b4293e595fa6941544,
         type: 3}
@@ -8705,12 +8710,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6391935c08504df4d9b494490d68d765, type: 3}
---- !u!4 &1786050638 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544,
-    type: 3}
-  m_PrefabInstance: {fileID: 866970182}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1800385664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9098,6 +9097,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 3ccd290dacb28bc409d85b2f564c9796,
     type: 3}
   m_PrefabInstance: {fileID: 1987226551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1987319148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544,
+    type: 3}
+  m_PrefabInstance: {fileID: 866970182}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1987319150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987319148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 063ec647aac2e8045853c38c1e3a07b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1987319155}
+  isCrouching: 0
+  crouchingHeight: 0.8
+--- !u!143 &1987319155 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 4416926081852918491, guid: 64dce48905ffd9b4293e595fa6941544,
+    type: 3}
+  m_PrefabInstance: {fileID: 866970182}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1996099123
 PrefabInstance:
