@@ -29,7 +29,6 @@ namespace StarterAssets
 		[Tooltip("The height the player can jump")]
 		public float JumpHeight = 1.2f;
 		[Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
-
 		public float Gravity = -15.0f;
 
 		[Space(10)]
@@ -288,7 +287,6 @@ namespace StarterAssets
 
 				// if we are not grounded, do not jump
 				_input.jump = false;
-				_input.sprint = false;
 			}
 
 			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)

@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class crouch : MonoBehaviour
 {
-    public CharacterController controller;
+    public CharacterController _controller;
         public bool isCrouching = false;
+        
+         public float standingHeight = 1.8f;
      public float crouchingHeight = 1.25f;
+     
+   
+   
     // Start is called before the first frame update
     void Start()
     {
-      controller = GetComponent<CharacterController>();
+      _controller = GetComponent<CharacterController>();
         
     }
+     
+     
 
     // Update is called once per frame
     void Update()
@@ -25,5 +32,15 @@ public class crouch : MonoBehaviour
         {
             isCrouching = false;
         }
+         if (isCrouching == true)
+        {
+            _controller.height = crouchingHeight;
+           
+        }
+        else
+        {
+            _controller.height = standingHeight;
+        }
+
     }
 }
