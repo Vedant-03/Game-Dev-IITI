@@ -41,6 +41,5 @@ public class crouch : MonoBehaviour
         {
             _controller.height = standingHeight;
         }
-
     }
 }
