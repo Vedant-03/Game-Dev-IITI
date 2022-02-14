@@ -453,6 +453,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 75599215}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &118478627
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 258494974888702776, guid: 0dc433c4ae05c9e4bb9db76cd17d5783,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 258494974888702776, guid: 0dc433c4ae05c9e4bb9db76cd17d5783,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.21169624
+      objectReference: {fileID: 0}
+    - target: {fileID: 258494974888702776, guid: 0dc433c4ae05c9e4bb9db76cd17d5783,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.6941383
+      objectReference: {fileID: 0}
+    - target: {fileID: 258494974888702776, guid: 0dc433c4ae05c9e4bb9db76cd17d5783,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.41428
+      objectReference: {fileID: 0}
+    - target: {fileID: 258494974888702776, guid: 0dc433c4ae05c9e4bb9db76cd17d5783,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 258494974888702776, guid: 0dc433c4ae05c9e4bb9db76cd17d5783,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 258494974888702776, guid: 0dc433c4ae05c9e4bb9db76cd17d5783,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 258494974888702776, guid: 0dc433c4ae05c9e4bb9db76cd17d5783,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 258494974888702776, guid: 0dc433c4ae05c9e4bb9db76cd17d5783,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 258494974888702776, guid: 0dc433c4ae05c9e4bb9db76cd17d5783,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 258494974888702776, guid: 0dc433c4ae05c9e4bb9db76cd17d5783,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 258494974888702778, guid: 0dc433c4ae05c9e4bb9db76cd17d5783,
+        type: 3}
+      propertyPath: m_Name
+      value: audiomanager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0dc433c4ae05c9e4bb9db76cd17d5783, type: 3}
 --- !u!1001 &165059102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2054,74 +2123,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 631123205}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &678678531
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 678678533}
-  - component: {fileID: 678678532}
-  m_Layer: 0
-  m_Name: AudioManager01
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &678678532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 678678531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7afb983c757e23b488fcd4cc9f972a82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: walkonsand
-    clip: {fileID: 8300000, guid: 557e96b16076cb84285c90941906b44c, type: 3}
-    volume: 0.33
-    pitch: 1.53
-    loop: 0
-    source: {fileID: 0}
-  - name: theme
-    clip: {fileID: 8300000, guid: 6fc82f0d97b34764196601f1c40d7711, type: 3}
-    volume: 0.21
-    pitch: 1.27
-    loop: 1
-    source: {fileID: 0}
-  - name: jumpsonsand
-    clip: {fileID: 8300000, guid: 6866bd26706082149a4be4b47f1e1b3d, type: 3}
-    volume: 0.447
-    pitch: 1.32
-    loop: 0
-    source: {fileID: 0}
-  - name: jumpseonsand
-    clip: {fileID: 8300000, guid: 9064dac268872fd48bf90e84554267ab, type: 3}
-    volume: 0.465
-    pitch: 1.4
-    loop: 0
-    source: {fileID: 0}
---- !u!4 &678678533
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 678678531}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.21169624, y: -2.6941383, z: -1.41428}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2944,7 +2945,7 @@ PrefabInstance:
     - target: {fileID: 3250084288983998190, guid: 6391935c08504df4d9b494490d68d765,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3250084288983998190, guid: 6391935c08504df4d9b494490d68d765,
         type: 3}

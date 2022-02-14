@@ -2,7 +2,6 @@
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 #endif
-using System.Collections;
 
 /* Note: animations are called via the controller for both the character and capsule using animator null checks
  */
@@ -91,13 +90,6 @@ namespace StarterAssets
 		private const float _threshold = 0.01f;
 
 		private bool _hasAnimator;
-		
-		IEnumerator ExecuteAfterTime(float time)
-					{
-						yield return new WaitForSeconds(time);
-						FindObjectOfType<audiomanager>().Play("jumpseonsand");
-						FindObjectOfType<audiomanager>().Play("jumpeonground");
-					}
 
 		private void Awake()
 		{
@@ -113,7 +105,6 @@ namespace StarterAssets
 			_hasAnimator = TryGetComponent(out _animator);
 			_controller = GetComponent<CharacterController>();
 			_input = GetComponent<StarterAssetsInputs>();
-			FindObjectOfType<audiomanager>().Play("theme");
 
 			AssignAnimationIDs();
 
@@ -201,7 +192,6 @@ namespace StarterAssets
 
 				// round speed to 3 decimal places
 				_speed = Mathf.Round(_speed * 1000f) / 1000f;
-				
 			}
 			else
 			{
@@ -221,12 +211,6 @@ namespace StarterAssets
 
 				// rotate to face input direction relative to camera position
 				transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
-				while(_input.move != Vector2.zero)
-				{
-				
-				FindObjectOfType<audiomanager>().Play("walkonsand");
-				FindObjectOfType<audiomanager>().Play("walkonground");
-				}
 			}
 
 
@@ -268,9 +252,6 @@ namespace StarterAssets
 				{
 					// the square root of H * -2 * G = how much velocity needed to reach desired height
 					_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
-					FindObjectOfType<audiomanager>().Play("jumpsonsand");
-					FindObjectOfType<audiomanager>().Play("jumpsonground");
-					StartCoroutine(ExecuteAfterTime(1));
 
 					// update animator if using character
 					if (_hasAnimator)
