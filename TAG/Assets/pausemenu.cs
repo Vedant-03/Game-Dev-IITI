@@ -1,49 +1,61 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class pausemenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pausemenuUI;
 
-    void resume()
+    public void resume()
     {
         pausemenuUI.SetActive(false);
         Time.timeScale=1f;
         GameIsPaused= false;
 
     }
-    void pause()
+    public void pause()
     {
        pausemenuUI.SetActive(true);
        Time.timeScale=0f;
        GameIsPaused = true;
     }
 
-
-    void update()
+    public void LoadMenu()
     {
-        if(GameIsPaused && pausemenuUI != null)
+        Debug.Log("Loading Menu");
+        SceneManager.LoadScene("menu");
+    }
+    public void QuitGame()
+    {
+        Debug.Log("Quitting Menu");
+        Application.Quit();
+    }
+
+
+    void Update()
+    {
+        if(GameIsPaused)
         {
-            Cursor.lockState=CursorLockMode.None;
-            Cursor.visible=true;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
-        else{
-            Cursor.lockState=CursorLockMode.Locked;
-            Cursor.visible=false;
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
-        if(Input.GetKey(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
             if(GameIsPaused)
             {
-                resume() ;
+                resume();
             }
-            else{
+            else
+            {
                 pause();
             }
         }
     }
-    
-
 }

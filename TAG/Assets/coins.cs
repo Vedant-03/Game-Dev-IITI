@@ -17,7 +17,7 @@ public class coins : MonoBehaviour
     }
     private void ontriggerenter(Collider other)
     {
-        if(other.name == "PlayerArmature")
+        if(other.name == "Player")
         {
             Destroy(gameObject);
         }
